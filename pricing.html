@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing · CREIGNIFICENT LLC</title>
+  <style>
+    :root {
+      --bg: #0f0c29;
+      --bg2: #302b63;
+      --glass: rgba(255, 255, 255, 0.08);
+      --glass-border: rgba(255, 255, 255, 0.18);
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #818cf8;
+      --gold: #fbbf24;
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(135deg, var(--bg), var(--bg2));
+      color: var(--text);
+      margin: 0;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { text-align: center; margin-bottom: 1.5rem; }
+    .card {
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: 18px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 0.85rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .highlight { background: rgba(129, 140, 248, 0.12); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Clear pricing</h1>
+    <div class="card">
+      <table>
+        <tr><th>Item</th><th>Price</th><th>What you get</th></tr>
+        <tr><td>Quote & Follow-Up Kit</td><td>$39</td><td>Forms + follow-up sequences + tracker</td></tr>
+        <tr><td>Daily Ops Dashboard Pack</td><td>$29</td><td>Sheets templates for scheduling & supplies</td></tr>
+        <tr class="highlight"><td>Member Library</td><td>$12 / month</td><td>All kits + monthly updates</td></tr>
+      </table>
+    </div>
+    <p style="text-align:center; margin-top:1.5rem;"><a href="index.html">← Back to store</a></p>
+  </div>
+</body>
+</html>
