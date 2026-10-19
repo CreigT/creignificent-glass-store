@@ -5,19 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You · CREIGNIFICENT LLC</title>
   <style>
-    :root { --bg: #0f0c29; --bg2: #302b63; --glass: rgba(255,255,255,0.08); --glass-border: rgba(255,255,255,0.18); --text: #f8fafc; --muted: #cbd5e1; --accent: #818cf8; }
+    :root { --bg: #0f0c29; --bg2: #302b63; --glass: rgba(255,255,255,0.08); --glass-border: rgba(255,255,255,0.18); --text: #f8fafc; --muted: #cbd5e1; --accent: #818cf8; --gold: #fbbf24; }
     body { font-family: system-ui, sans-serif; background: linear-gradient(135deg, var(--bg), var(--bg2)); color: var(--text); margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; }
-    .card { background: var(--glass); backdrop-filter: blur(16px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 2.5rem; text-align: center; max-width: 480px; }
-    h1 { margin-bottom: 1rem; }
-    p { color: var(--muted); margin-bottom: 1.5rem; }
-    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .card { background: var(--glass); backdrop-filter: blur(16px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 2.5rem; text-align: center; max-width: 520px; width: 100%; }
+    h1 { margin-bottom: 0.75rem; }
+    p { color: var(--muted); margin-bottom: 1.5rem; line-height: 1.5; }
+    .downloads { display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #818cf8, #c084fc);
+      color: white;
+      text-decoration: none;
+      padding: 0.85rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .note { font-size: 0.9rem; color: var(--muted); margin-top: 1rem; }
+    a.back { color: var(--accent); text-decoration: none; font-weight: 600; }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Payment received</h1>
-    <p>Thank you. Check your email for access links and next steps. CREIGNIFICENT LLC will follow up if anything is needed.</p>
-    <a href="index.html">Return to store</a>
+    <p>Thank you. Your kit is ready. Use the buttons below to open or copy the files into your own Google Drive.</p>
+    
+    <div class="downloads">
+      <a class="btn" href="https://docs.google.com/spreadsheets/d/14U3XAI4mTGtDJHmTvH_YPxSyoE1IiEGVsSS39f7lq94/edit" target="_blank">Open Quote Follow-Ups Sheet</a>
+      <a class="btn" href="https://docs.google.com/document/d/18GksHBR8K7hqYbu_dXmBvA-2UKllzj5RHCQhB8pEJTQ/edit" target="_blank">Open 4-Touch Follow-Up System</a>
+      <a class="btn" href="https://docs.google.com/spreadsheets/d/1gltv_JO8s00MwF4crWYnmKmn6prbuKae9W7Br1qcXzo/edit" target="_blank">Open Live CRM Dashboard</a>
+      <a class="btn" href="https://drive.google.com/drive/folders/1ffuwJJOYe4UK7BihsiJBXwjkivavRuW4" target="_blank">Open Kits Folder</a>
+    </div>
+    
+    <p class="note">Tip: Click “File → Make a copy” on each Google file so you own your version.</p>
+    <a class="back" href="index.html">Return to store</a>
   </div>
 </body>
 </html>
